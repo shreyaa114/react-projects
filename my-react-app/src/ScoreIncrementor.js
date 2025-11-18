@@ -1,5 +1,6 @@
 // score tracker that increments the score of a user when a button is clicked adding name.
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './ScoreIncrementer.css'
 
 const ScoreIncrementor = () => {
     const [scores, setScores] = useState([{
@@ -27,13 +28,13 @@ const ScoreIncrementor = () => {
     }
 
     return (
-        <div>
-            <div>
-                <input type='text' value={name} placeholder='enter the name' onChange={updateName} />
+        <div className='box'>
+            <div className='main-div'>
+                <input className='text' type='text' value={name} placeholder='Enter the name' onChange={updateName} />
                 <br />
-                <button type='submit' onClick={(e) => handleSubmit(name, e)}>Submit</button>
+                <button className='btn' type='submit' onClick={(e) => handleSubmit(name, e)}>Submit</button>
             </div>
-            <p>Scores are: {scores.map((score)=>(
+            <p><b><u>Scores are:</u></b> {scores.map((score) => (
                 <p>{score.name}: {score.point}</p>
             ))}</p>
 
