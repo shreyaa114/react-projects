@@ -1,10 +1,15 @@
 import './App.css';
-import { Hobby } from './HobbyChecklist';
+import { Suspense, lazy } from 'react';
+import ScoreIncrementor from './ScoreIncrementor';
+
+// const Hobby = lazy(()=> import('./HobbyChecklist')); // lazy loading 
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello world</h1>
-      <Hobby/>
+      <Suspense fallback={<div>Page is Loading....</div>}>
+      <ScoreIncrementor/>
+      </Suspense>
     </div>
   );
 }

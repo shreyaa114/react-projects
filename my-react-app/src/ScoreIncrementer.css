@@ -1,0 +1,38 @@
+body {
+    display: block;
+    background-color: rgba(159, 189, 199, 0.329);
+    margin: 0;
+    padding: 30px;
+    justify-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.box {
+    border-radius: 0.5in;
+    background-color: white;
+    padding: 25px;
+    margin: auto;
+}
+
+.main-div {
+    background-color: aliceblue;
+    padding: 25px;
+    margin: auto;
+    height: 100px;
+    width: 350px;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    padding: 5px;
+    margin: 20px;
+}
+
+.btn {
+    font-size: medium;
+}
+
+.btn:hover {
+    background-color: #b3babd;
+}
