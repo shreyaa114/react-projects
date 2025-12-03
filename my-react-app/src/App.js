@@ -1,6 +1,6 @@
 import './App.css';
 import { Suspense } from 'react';
-import {Todo} from './Todo.js';
+import {FetchUser} from './FetchUser.js';
 
 // const Hobby = lazy(()=> import('./HobbyChecklist')); // lazy loading 
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback={<div>Page is Loading....</div>}>
-      <Todo/>
+      <FetchUser/>
       </Suspense>
     </div>
   );
